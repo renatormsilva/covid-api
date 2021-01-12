@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  /* adicionando imagem de fundo */
+  background: url(https://source.unsplash.com/collection/158642/1600x900);
+  background-size: cover;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  position: absolute;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+input {
+  width: 30%;
+  background: #ddd;
+  text-indent: 20px;
+}
+
+button {
+  width: 85px;
+  left: 65%;
+  background: #aaa;
+  cursor: pointer;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+input:focus,
+button:hover {
+  background: #fff;
+  border: 2px solid #0e7c81;
+  box-shadow: 0 0 5px #17e5ff;
+}
+
+input:focus ~ .content {
+  background: rgba(0, 0, 0, 0.8);
+}
