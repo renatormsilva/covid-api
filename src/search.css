@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue&family=Yusei+Magic&display=swap");
 body {
   height: 100vh;
   height: 100vh;
@@ -5,6 +6,12 @@ body {
   padding: 0;
   background: url(https://source.unsplash.com/collection/158642/1600x900);
   background-size: cover;
+}
+
+input {
+  font-family: "Imbue", serif;
+
+  font-family: "Yusei Magic", sans-serif;
 }
 
 .search-box {
@@ -16,6 +23,12 @@ body {
   height: 40px;
   border-radius: 40px;
   padding: 10px;
+}
+
+.search-box:hover {
+  max-width: 482px;
+  width: 482px;
+  transition: 0.8s;
 }
 
 .search-box:hover > .search-txt {
@@ -40,6 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: 0.4s;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 .search-txt {
