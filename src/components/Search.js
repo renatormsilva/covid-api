@@ -4,9 +4,10 @@ import React from 'react';
 export default function Search() {
     return (
         <React.Fragment>
-            <input type="search" placeholder="Enter a country name to get information about covid-19" />
-            <button type="submit">Search</button>
-            <div className="content"></div>
+            <input className="search-txt" type="text" name="" placeholder="Enter a country name to get information about covid-19" />
+            <a className="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
         </React.Fragment>
-    )
-}
+        
+    )}
