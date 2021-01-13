@@ -1,15 +1,22 @@
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import './search.css'
 
 export default function Search() {
 
     const [countries, setCountries] = useState('');
 
     return (
-        <div className="search-box">
+        <React.Fragment>
+            <div className="header">
+                <p>Enter a country abbreviation to get information about covid-19</p>
+            </div>
+            
+            <div className="search-box">
+            
             <input
                onChange={(e) => setCountries(e.target.value)}
-                className="search-txt" type="text" name="" placeholder="Enter a country abbreviation to get information about covid-19" />
+                className="search-txt" type="text" name="" placeholder="Type br to search for Brazil'" />
 
             
                 <a type="submit" className="search-btn" href={"show/"+countries}> 
@@ -17,5 +24,7 @@ export default function Search() {
             
             </a>
         </div>
+        </React.Fragment>
+        
                   
     )}

@@ -6,6 +6,24 @@ body {
   padding: 0;
   background: url(https://source.unsplash.com/collection/158642/1600x900);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: #2f3640;
+  margin-right: 25%;
+  margin-left: 25%;
+  border-radius: 42px;
+}
+
+p {
+  font-family: "Yusei Magic", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 18px;
 }
 
 input {
@@ -16,8 +34,8 @@ input {
 
 .search-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  margin-top: 20%;
+  margin-left: 50%;
   transform: translate(-50%, -50%);
   background: #2f3640;
   height: 40px;
@@ -27,12 +45,12 @@ input {
 
 .search-box:hover {
   min-width: 20vh;
-  width: 540px;
+  width: 310px;
   transition: 0.8s;
 }
 
 .search-box:hover > .search-txt {
-  width: 470px;
+  width: 220px;
   padding: 0 6px;
 }
 
