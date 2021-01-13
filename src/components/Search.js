@@ -9,7 +9,7 @@ export default function Search() {
         <div className="search-box">
             <input
                onChange={(e) => setCountries(e.target.value)}
-                className="search-txt" type="text" name="" placeholder="Enter a country name to get information about covid-19" />
+                className="search-txt" type="text" name="" placeholder="Enter a country abbreviation to get information about covid-19" />
 
             
                 <a type="submit" className="search-btn" href={"show/"+countries}> 

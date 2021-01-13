@@ -27,12 +27,12 @@ input {
 
 .search-box:hover {
   min-width: 20vh;
-  width: 480px;
+  width: 540px;
   transition: 0.8s;
 }
 
 .search-box:hover > .search-txt {
-  width: 425px;
+  width: 470px;
   padding: 0 6px;
 }
 
