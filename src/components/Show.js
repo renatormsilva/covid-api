@@ -20,8 +20,6 @@ export default function Show(props) {
 
     return (
         <React.Fragment>
-            
-            <hr/>
             <table>
                 <tr>
                     <th>Country</th>
