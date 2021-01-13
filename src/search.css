@@ -39,8 +39,9 @@ input {
 
 .search-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  margin-top: 20%;
+  margin-left: 50%;
+
   transform: translate(-50%, -50%);
   background: #2f3640;
   height: 40px;
@@ -50,7 +51,7 @@ input {
 
 .search-box:hover {
   min-width: 20vh;
-  width: 340px;
+  width: 310px;
   transition: 0.8s;
 }
 
