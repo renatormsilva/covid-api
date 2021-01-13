@@ -1,71 +1,51 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import './show.css'
+import api from '../services/api'
 
-export default function Show() {
+export default function Show(props) {
+
+    
+    const result = props.match.params.id
 
     const [cases, setCases] = useState([]);
-    const [countries, setCountries] = useState("BR");
+
+   
+    api.get(`countries/${result}/confirmed`).then((response) => {
+        setCases(response.data)
+    })
+
+
+    
 
 
     return (
         <React.Fragment>
-            <h1>Brasil</h1>
+            
             <hr/>
             <table>
-                <tr id="header">
+                <tr>
                     <th>Country</th>
                     <th>City</th>
+                    <th>Today</th>
                     <th>Confirmed cases</th>
                     <th>Active cases</th>
                     <th>Deaths</th>
-                    <th>Recovered</th>
+                    
                 </tr>
+
+                {cases.map((caso) => (
+                <tr>
+                    <td>{caso.countryRegion}</td>
+                    <td>{caso.provinceState}</td>
+                    <td>{caso.confirmed}</td>
+                    <td>{caso.active}</td>
+                    <td>{caso.deaths}</td>
+                    <th> {caso.recovered} </th>
+                        
+                        
+                </tr>
+                ))}
                 
-                <tr>
-                    <td>Brasil</td>
-                    <td>Manaus</td>
-                    <td>24</td>
-                    <td>12</td>
-                    <td>2</td>
-                    <td>2</td>
-                        
-                </tr>
-
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>24</td>
-                    <td>USA</td>
-                    <td>Male</td>
-                        
-                </tr>
-
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>24</td>
-                    <td>USA</td>
-                    <td>Male</td>
-                        
-                </tr>
-
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>24</td>
-                    <td>USA</td>
-                    <td>Male</td>
-                        
-                </tr>
-
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>24</td>
-                    <td>USA</td>
-                    <td>Male</td>
-                        
-                </tr>
 
             </table>
             
