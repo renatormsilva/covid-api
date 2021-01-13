@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Search from './components/Search'
+import Routes from './routes'
 
 function App() {
   return (
-    <Search/>
+    <Routes/>
   );
 }
 

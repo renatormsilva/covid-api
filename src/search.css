@@ -26,13 +26,13 @@ input {
 }
 
 .search-box:hover {
-  max-width: 482px;
-  width: 482px;
+  min-width: 20vh;
+  width: 480px;
   transition: 0.8s;
 }
 
 .search-box:hover > .search-txt {
-  width: 420px;
+  width: 425px;
   padding: 0 6px;
 }
 
