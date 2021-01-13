@@ -9,18 +9,28 @@ export default function Show(props) {
 
     const [cases, setCases] = useState([]);
 
-   
+    const [location, setLocation] = useState('');
+
+
     api.get(`countries/${result}/confirmed`).then((response) => {
-        setCases(response.data)
+        setLocation(response.data[2].countryRegion)
     })
 
-
+   
+    
+        api.get(`countries/${result}/confirmed`).then((response) => {
+        setCases(response.data)
+    })
     
 
 
+
     return (
-        <React.Fragment>
-            <table>
+        <div class="table-container">
+            <h2 class="table-heading">Situation in {location}</h2>
+
+      <table>
+        <thead>
                 <tr>
                     <th>Country</th>
                     <th>City</th>
@@ -30,24 +40,25 @@ export default function Show(props) {
                     <th>Recovered</th>
                     
                 </tr>
+        </thead>
 
-                {cases.map((caso) => (
-                <tr>
-                    <td>{caso.countryRegion}</td>
-                    <td>{caso.provinceState}</td>
-                    <td>{caso.confirmed}</td>
-                    <td>{caso.active}</td>
-                    <td>{caso.deaths}</td>
-                    <th> {caso.recovered} </th>
-                        
-                        
-                </tr>
-                ))}
-                
+        <tbody>
+          {cases.map((caso) => (
+            <tr>
+                <td data-heading="Country">{caso.countryRegion}</td>
+                <td data-heading="City">{caso.provinceState}</td>
+                <td data-heading="Confirmed cases">{caso.confirmed}</td>
+                <td data-heading="Active cases">{caso.active}</td>
+                <td data-heading="Deaths">{caso.deaths}</td>
+                <td data-heading="Recovered">{caso.recovered}</td>
+          </tr>    
+          ))}
+          
 
-            </table>
-            
-        </React.Fragment>
+          
+        </tbody>
+      </table>
+    </div>
 
         
     )

@@ -1,13 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Imbue&family=Yusei+Magic&display=swap");
+
 body {
   height: 100vh;
   height: 100vh;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: url(https://source.unsplash.com/collection/158642/1600x900);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+.header {
+  background-color: #2f3640;
+  color: white;
+  margin-right: 20%;
+  margin-left: 20%;
+  border-radius: 36px;
+}
+
+.header:hover {
+  color: goldenrod;
+  transition: 1s;
+}
+
+p {
+  font-family: "Yusei Magic", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  padding: 18px;
+}
 input {
   font-family: "Imbue", serif;
 
@@ -27,12 +50,12 @@ input {
 
 .search-box:hover {
   min-width: 20vh;
-  width: 540px;
+  width: 340px;
   transition: 0.8s;
 }
 
 .search-box:hover > .search-txt {
-  width: 470px;
+  width: 220px;
   padding: 0 6px;
 }
 
