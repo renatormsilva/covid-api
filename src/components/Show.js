@@ -24,10 +24,10 @@ export default function Show(props) {
                 <tr>
                     <th>Country</th>
                     <th>City</th>
-                    <th>Today</th>
                     <th>Confirmed cases</th>
                     <th>Active cases</th>
                     <th>Deaths</th>
+                    <th>Recovered</th>
                     
                 </tr>
 
