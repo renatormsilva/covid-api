@@ -3,6 +3,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#back-link {
+  margin-right: 10px;
+}
+
 #show-input {
   text-align: center;
   margin-left: 50%;
@@ -11,7 +15,6 @@
   margin-top: 1vh;
   width: 200px;
   float: left;
-  padding: 6px;
 }
 #show-link {
   margin: -82px;
@@ -26,6 +29,7 @@
   padding: 4px;
   outline: none;
   border-radius: 16px;
+  margin-right: -100px;
 }
 
 .table-container h2.table-heading {

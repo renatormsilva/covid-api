@@ -37,6 +37,8 @@ export default function Show(props) {
         
     <div className="table-container">
       <input id="show-input" onChange={(ev) => setSearchShow(ev.target.value)} className="search-show" type="text" placeholder='Type "br" to search for Brazil'></input>
+      <a id="back-link" type="submit" href="/" ><i class="fas fa-backward"></i></a>
+
       <a id="show-link" type="submit" href={searchShow} ><i class="fas fa-search"></i></a>
       
         <h2 className="table-heading">Situation in {location}</h2>
