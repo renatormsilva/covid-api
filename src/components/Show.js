@@ -11,27 +11,21 @@ export default function Show(props) {
   const [location, setLocation] = useState('');
   const [searchShow, setSearchShow] = useState('');
   
-
-
-  
   useEffect(() => {
-        api.get(`countries/${result}/confirmed`).then((response) => {
+    api.get(`countries/${result}/confirmed`).then((response) => {
         setLocation(response.data[2].countryRegion)
     })
   
   api.get(`countries/${result}/confirmed`).then((response) => {
         setCases(response.data)
   })
-    
-    
-    
-  })
   
+    console.log("ta passando aqui")
 
-  
     
-
-
+  }, [location, result], [cases, result])
+        
+ 
 
   return (
         

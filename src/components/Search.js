@@ -5,6 +5,8 @@ export default function Search() {
 
     const [countries, setCountries] = useState('');
 
+    
+
     return (
         <React.Fragment>
             <div className="header">
