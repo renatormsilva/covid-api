@@ -19,7 +19,7 @@ export default function Search() {
                 className="search-txt" type="text" name="" placeholder="Type br to search for Brazil" />
             
                 <a type="submit" className="search-btn" href={"show/"+countries}> 
-                <i class="fas fa-search"></i>
+                <i className="fas fa-search"></i>
             
             </a>
         </div>
