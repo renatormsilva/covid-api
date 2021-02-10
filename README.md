@@ -7,6 +7,7 @@
 
 [Node.js](https://nodejs.org/en/)
 | [React.js](https://https://pt-br.reactjs.org/)
+| [Heroku](https://https://dashboard.heroku.com/)
 | [Javascript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 | [Html](https://tableless.com.br/o-que-html-basico/)
 | [CSS](https://www.w3schools.com/css/)
@@ -15,5 +16,7 @@
 | [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 ## 💻 Project
+
+### API developed in nodejs, saving the data already searched in cache --> https://github.com/renatormsilva/covid-api-node
 
 ### view the project -> https://covid-api-i8tnoa1xc.vercel.app/
