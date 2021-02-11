@@ -17,6 +17,6 @@
 
 ## 💻 Project
 
-### API developed in nodejs, saving the data already searched in cache --> https://github.com/renatormsilva/covid-api-node
+### API developed in nodejs --> https://github.com/renatormsilva/covid-api-node
 
 ### view the project -> https://covid-api-i8tnoa1xc.vercel.app/
